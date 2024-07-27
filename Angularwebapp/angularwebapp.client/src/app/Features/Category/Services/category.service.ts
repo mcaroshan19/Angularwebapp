@@ -8,12 +8,16 @@ import { AddCategortRequest } from '../model/add-category-request-model';
 })
 export class CategoryService {
 
-  private apiUrl = 'https://localhost:7169/api/categories'; // https://localhost:7169/swagger/index.html
+//  apiUrl = 'https://localhost:7169/api/Categories'; 
   constructor(private http: HttpClient) {}
 
-  addCategory(category: AddCategortRequest): Observable<AddCategortRequest> {
-    return this.http.post<AddCategortRequest>(this.apiUrl, category);
+  // addCategory(category: AddCategortRequest): Observable<AddCategortRequest> {
+  //   return this.http.post<AddCategortRequest>(this.apiUrl, category);
+  // }
+  addCategory(category: AddCategortRequest): Observable<void> {
+    return this.http.post<void>('https://localhost:7169/api/Categories', category);
   }
+
 
 }
 

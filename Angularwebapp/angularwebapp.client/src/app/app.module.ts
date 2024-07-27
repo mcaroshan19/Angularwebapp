@@ -19,7 +19,7 @@ import { FormsModule } from '@angular/forms';
     AddCategoryComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule,
+    BrowserModule, 
     AppRoutingModule,
     FormsModule,
     HttpClientModule

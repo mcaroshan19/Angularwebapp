@@ -1,14 +1,14 @@
 
 <div class="container">
     <h1 class="mt-3">Add Category</h1>
-    <form #form="ngForm" class="form-horizontal form-label-left ng-invalid ng-invalid-required ng-valid-maxlength ng-dirty" (ngSubmit)="onFormSubmit(form)">
+    <form #form="ngForm" class="form-horizontal form-label-left ng-invalid ng-invalid-required ng-valid-maxlength ng-dirty" (ngSubmit)="onFormSubmit()">
       <div class="mt-3">
         <div class="form-group row">
           <label for="categoryname" class="control-label col-md-3 col-sm-3 col-xs-12 font-weight-bold">
             Category Name<span class="red">*</span>:
           </label>
           <div class="col-md-6 col-sm-9 col-xs-12">
-            <input type="text" id="categoryname" ngModel="model.Name" class="form-control"  title="Enter the category name" required>
+            <input type="text" id="categoryName" name="categoryName" ngModel="model.Name" class="form-control"  title="Enter the category name" required>
           </div>
         </div>
   
@@ -17,7 +17,7 @@
             Category UrlHandle:
           </label>
           <div class="col-md-6 col-sm-9 col-xs-12">
-            <input type="text" id="Urlhandle" ngModel="model.UrlHandle"  class="form-control" title="Enter the URL handle">
+            <input type="text" #categoryUrlhandle name="categoryUrlhandle" ngModel="Urlhandle" class="form-control" title="Enter the URL handle">
           </div>
         </div>
       </div>

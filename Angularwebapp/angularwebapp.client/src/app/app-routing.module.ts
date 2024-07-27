@@ -8,7 +8,7 @@ const routes: Routes = [
     path: 'Admin/category-list',
     component: CategoryListComponent, 
   
-  },
+  }, 
   { path: 'add-category', component: AddCategoryComponent },
 
 ];
